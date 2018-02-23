@@ -4,7 +4,7 @@ contract RateLimit {
     
   modifier enabledEvery(uint t) {
     if (now >= enabledAt) {
-	  enabledAt = now + t;
+      enabledAt = now + t;
       _;      
     }
   }

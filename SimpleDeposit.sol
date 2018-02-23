@@ -21,4 +21,11 @@ contract SimpleDeposit {
   function getBalance() public view returns (uint balance) {
     return balances[msg.sender];
   }
+  
+  function withdraw(uint amount) public {
+    if (balances[msg.sender] >= amount) {
+      balances[msg.sender] -= amount;
+      msg.sender.transfer(amount);
+    }
+  }
 }

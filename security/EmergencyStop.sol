@@ -6,6 +6,7 @@ contract EmergencyStop is Owned {
   modifier haltInEmergency { 
     if (!contractStopped) _;
   }
+  
   modifier enableInEmergency { 
     if (contractStopped) _;
   }
