@@ -2,7 +2,7 @@ This is the accompanying code repository for the following research papers:<br/>
 [Design Patterns for Smart Contracts in the Ethereum Ecosystem](https://swa.cs.univie.ac.at/research/publications/publication/5665/])<br/>
 [Smart Contracts: Security Patterns in the Ethereum Ecosystem and Solidity](https://swa.cs.univie.ac.at/research/publications/publication/5433/)
 
-# Smart-Contract Patterns
+# Design Patterns
 
 Design  patterns are a commonly used technique to encode design guide-lines or best practices. They express an abstract or conceptual solution to a concrete, complex, and reoccurring problem.
 
