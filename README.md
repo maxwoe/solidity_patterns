@@ -1,8 +1,10 @@
+This is the accompanying code repository for the following research papers:<br/>
+[Design Patterns for Smart Contracts in the Ethereum Ecosystem](https://swa.cs.univie.ac.at/research/publications/publication/5665/])<br/>
+[Smart Contracts: Security Patterns in the Ethereum Ecosystem and Solidity](https://swa.cs.univie.ac.at/research/publications/publication/5433/)
+
 # Smart-Contract Patterns
 
-A software pattern describes an abstraction or conceptualization of a concrete, complex, and reoccurring problem that
-software designers have faced in the context of real software development projects and a successful solution they have
-implemented multiple times to resolve this problem [E. Gamma, R. Helm, R. Johnson, and J. Vlissides, “Design patterns: elements of,” 1994.].
+Design  patterns are a commonly used technique to encode design guide-lines or best practices. They express an abstract or conceptual solution to a concrete, complex, and reoccurring problem.
 
 ## Action and Control
 
