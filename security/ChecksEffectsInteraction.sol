@@ -1,6 +1,7 @@
-pragma solidity ^0.4.17;
+pragma solidity ^ 0.5.1;
+
 contract Auction {
-  address public beneficiary = msg.sender;
+  address payable public beneficiary = msg.sender;
   address highestBidder;
   uint highestBid;
   uint public auctionEnd = now + 3 days;
@@ -9,7 +10,7 @@ contract Auction {
 
   function bid() public payable {
     require(msg.value >= highestBid);
-    if (highestBidder != 0) {
+    if (highestBidder != address(0)) {
       refunds[highestBidder] += highestBid; // record the refund that this user can claim
     }
     highestBidder = msg.sender;
@@ -21,8 +22,8 @@ contract Auction {
     refunds[msg.sender] = 0;
     msg.sender.transfer(refund);
   }
-    
-  function auctionEnd() public {
+
+  function endAuction() public {
     // 1. Checks
     require(now >= auctionEnd);
     require(!ended);

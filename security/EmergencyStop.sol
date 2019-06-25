@@ -1,13 +1,22 @@
-pragma solidity ^0.4.17;
-import "../authorization/Ownership.sol";
-contract EmergencyStop is Owned {
-  bool public contractStopped = false;
+pragma solidity ^ 0.5.1;
 
-  modifier haltInEmergency { 
+contract EmergencyStop {
+  bool public contractStopped = false;
+  address public owner;
+
+  constructor() public {
+    owner = msg.sender;
+  }
+  modifier onlyOwner() {
+    require(owner == msg.sender);
+    _;
+  }
+
+  modifier haltInEmergency {
     if (!contractStopped) _;
   }
-  
-  modifier enableInEmergency { 
+
+  modifier enableInEmergency {
     if (contractStopped) _;
   }
 
@@ -23,4 +32,3 @@ contract EmergencyStop is Owned {
     // some code
   }
 }
-
