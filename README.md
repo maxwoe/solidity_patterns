@@ -100,7 +100,7 @@ _ | CONTRACT RELAY PATTERN |
 Source | [maintenance/Relay.sol](maintenance/Relay.sol)
 
 ## Security
-
+### NEW! Now compatible with Solidity 0.5.1!
 Security is a group of patterns that introduce safety measures
 to mitigate damage and assure a reliable contract execution.
 
