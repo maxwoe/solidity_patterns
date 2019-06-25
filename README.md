@@ -1,5 +1,5 @@
 This is the accompanying code repository for the following research papers:<br/>
-[Design Patterns for Smart Contracts in the Ethereum Ecosystem](https://swa.cs.univie.ac.at/research/publications/publication/5665/])<br/>
+[Design Patterns for Smart Contracts in the Ethereum Ecosystem](https://swa.cs.univie.ac.at/research/publications/publication/5665/)<br/>
 [Smart Contracts: Security Patterns in the Ethereum Ecosystem and Solidity](https://swa.cs.univie.ac.at/research/publications/publication/5433/)
 
 # Design Patterns
